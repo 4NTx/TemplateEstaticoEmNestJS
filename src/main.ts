@@ -21,10 +21,10 @@ async function bootstrap() {
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'"],
-        styleSrc: ["'self'", 'https:', 'unsafe-inline'],
+        styleSrc: ["'self'", 'https:', "'unsafe-inline'"],
         fontSrc: ["'self'", 'https:', 'data:'],
         imgSrc: ['data:', 'https:', 'http://127.0.0.1:3000'],
-        scriptSrc: ["'self'", "https://caminhoDeScriptsAqui.com"],
+        scriptSrc: ["'self'", 'https:', "'unsafe-inline'",],
       }
     }
   });
